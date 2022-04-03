@@ -22,7 +22,7 @@ document.documentElement.scrollTop = 0;
 }
 
 /**
- *  SKILLS
+ *  =========== SKILLS =========
  */
 
 
@@ -98,4 +98,33 @@ function afficheListDesign(){
 function cacheListDesign(){
     designerSkills.style.display = "none";
     icon_angleDesign.style.transform = "rotate(1deg)";
+}
+
+
+/**
+ * ============= QUALIFICATIONS =========
+ * 
+ */
+
+var work = document.querySelector('#button_work');
+var education = document.querySelector('#button_education');
+var qualification_two = document.querySelector('#qualif_partTwo');
+var qualification_one = document.querySelector('#qualif_partOne');
+
+work.addEventListener('click', afficheQualifWork);
+education.addEventListener('click', afficheQualifEdu);
+
+
+function afficheQualifWork(){
+    qualification_two.style.display = "block";
+    qualification_one.style.display = "none";
+    work.style.color = "#6e57e0";
+    education.style.color = "#625C7E";
+}
+
+function afficheQualifEdu(){
+    qualification_one.style.display = "block";
+    qualification_two.style.display = "none";
+    education.style.color = "#6e57e0";
+    work.style.color = "#625C7E";
 }

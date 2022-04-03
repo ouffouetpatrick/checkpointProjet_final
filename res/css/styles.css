@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
 
 *{
     padding: 0px;
@@ -20,12 +20,30 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
+
+   /*========== Font and typography ==========*/
+   --body-font:  'Poppins', sans-serif;
+
+     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+     --big-font-size: 2rem ;
+     --h1-font-size: 1.5rem;
+     --h2-font-size: 1.25rem;
+     --h3-font-size: 1.125rem;
+     --normal-font-size: 0.938rem;
+     --small-font-size: 0.813rem;
+     --smaller-font-size: .75rem;
+ 
+     /*========== Font weight ==========*/
+     --font-medium: 500;
+     --font-semi-bold: 600;
 }
 
+
 body{
-   /*  border: 2px solid; */
-    font-family: 'Montserrat', sans-serif !important;
     padding-top: 160px;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
 }
 
 html {
@@ -34,14 +52,19 @@ html {
 
 h1, h2, h3, h4, h5{
     color: var(--title-color);
+    font-weight: var(--font-semi-bold);
 }
 
 input{
     font-family: 'Montserrat', sans-serif !important;
 }
 
+
+/*
+========== NAV AND HEADER ===========
+*/
+
 nav{
-    /* border: 2px solid blue; */
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -70,7 +93,6 @@ nav{
 }
 
 .lune{
-    /* border: 2px solid yellow; */
     margin-left: 1rem;
 }
 
@@ -79,11 +101,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid red; */
 }
 
 .header_content__left{
-    /* border: 2px solid green; */
     width: 60%;
     display: flex;
     align-items: center;
@@ -91,7 +111,6 @@ nav{
 }
 
 .header_content__right{
-    /* border: 2px solid orange; */
     width: 40%;
     margin-left: 10px;
 }
@@ -133,22 +152,18 @@ nav{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border: 20px solid white; */
     border-radius: 100px;
     border-top-left-radius:500px;
     border-top-right-radius: 500px;
     border-bottom-left-radius: 1000px;
-    /* border-bottom-right-radius: 1000px; */
 }
 
 .scroller{
-   /*  border: 2px solid maroon; */
     padding: 0 100px 0 100px;
     margin-top: 5rem;
 }
 
 .scroller p{
-    /* border: 2px solid maroon; */
     margin-left: 9rem;
     font-weight: bold;
     cursor: pointer;
@@ -172,12 +187,21 @@ nav{
     font-size: 20px;
 }
 
+
+/*
+========== MAIN =========/
+*/
+
 .main{
     padding: 0 100px 0 100px;
 }
 
+
+/*
+============ ABOUT ==========
+*/
+
 .about{
-   /*  border: 2px solid rebeccapurple; */
     margin-top: 5rem;
 }
 
@@ -200,7 +224,6 @@ nav{
 }
 
 .about_content{
-    /* border: 2px solid greenyellow; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,14 +232,12 @@ nav{
 }
 
 .about_content__left{
-    /* border: 2px solid magenta; */
     width: 55%;
     display: flex;
     justify-content: center;
 }
 
 .about_img{
-   /*  border: 2px solid red; */
     width: 320px;
     height: 320px;
 }
@@ -229,7 +250,6 @@ nav{
 }
 
 .about_content__right{
-    /* border: 2px solid burlywood; */
     width: 45%;
 }
 
@@ -286,8 +306,11 @@ nav{
     background-color: var(--dark);
 }
 
+/*
+============= SKILLS =============
+*/
+
 .skills{
-    /*  border: 2px solid rebeccapurple; */
      margin-top: 5rem;
      margin-left: 8rem;
      margin-right: 8rem;
@@ -320,7 +343,6 @@ nav{
  }
 
  .skills_content__left{
-    /* border: 2px solid olive; */
     width: 50%;
  }
 
@@ -355,7 +377,6 @@ nav{
  }
 
  .skills_content__right{
-   /*  border: 2px solid maroon; */
     width: 50%;
  }
 
@@ -373,15 +394,12 @@ nav{
 }
 
 .skills_content__left2{
-    /* border: 2px solid yellow; */
     display: flex;
     justify-content: flex-end;
 }
 
 .skills_list{
-    /* border: 2px solid red; */
     width: 385px;
-    /* display: none; */
     padding-bottom: 5px;
 }
 
@@ -392,7 +410,6 @@ nav{
 }
 
 .skills_list__right{
-    /* border: 2px solid orange; */
     width: 360px;
 }
 
@@ -412,7 +429,6 @@ nav{
 }
 
 .skills_content__right2{
-    /* border: 2px solid yellow; */
     display: flex;
     justify-content: flex-end;
 }
@@ -479,4 +495,107 @@ nav{
 
 .skills_percentPs{
     width: 85%;
+}
+
+/*
+============ QUALIFICATION ========
+*/
+
+.qualification{
+    margin-top: 6rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.header_qualif{
+    display: flex;
+    justify-content: center;
+}
+
+.qualif_title{
+    text-align: center;
+}
+
+.qualif_subtitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.uil-graduation-cap,
+.uil-briefcase-alt{
+    font-size: 28px;
+}
+
+.button_briefcase,
+.button_gratuation{
+    border: none;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    color: #625C7E;
+}
+
+.qualification_content{
+    margin-top: 3rem;
+   
+}
+
+.qualif_element_left h3,
+.qualif_element_right h3{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 1px;
+}
+
+.qualif_element_left{
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+}
+
+.qualif_name_left{
+    margin-right: 2rem;
+}
+
+.qualif_name_right{
+    margin-left: 2rem;
+}
+
+.qualif_element_right{
+    display: flex;
+    justify-content: flex-start;
+    width: 248px;
+
+}
+
+.qualif_date{
+    font-size: var(--small-font-size);
+    margin-top: 1rem;
+}
+
+.qualif_rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.qualif_line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
+
+.second_qualification{
+    display: none;
 }
