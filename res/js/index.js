@@ -128,3 +128,44 @@ function afficheQualifEdu(){
     education.style.color = "#6e57e0";
     work.style.color = "#625C7E";
 }
+
+
+/**
+ * ========== SERVICES ========
+ * 
+ */
+
+
+/**
+ * ====== SERVICE Ui/Ui Designer =====
+ */
+var buttonVoirPlusUi = document.querySelector('.service_ui');
+var title_modal = document.querySelector('#serviceModal');
+
+buttonVoirPlusUi.addEventListener('click', changeModalUi);
+
+function changeModalUi(){
+    title_modal.innerHTML  = '<h3> Ui/Ux <br> Designer </h3>';
+}
+
+
+/**
+ * ====== SERVICE Frontend Developer =====
+ */
+var buttonVoirPlusFront = document.querySelector('.service_front');
+buttonVoirPlusFront.addEventListener('click', changeModalFront);
+
+function changeModalFront(){
+    title_modal.innerHTML  = '<h3> Frontend <br> Developer </h3>';
+}
+
+
+/**
+ * ====== SERVICE Branding Designer =====
+ */
+var buttonVoirPlusBrand = document.querySelector('.service_brand');
+buttonVoirPlusBrand.addEventListener('click', changeModalBrand);
+
+function changeModalBrand(){
+    title_modal.innerHTML  = '<h3> Branding <br> Designer </h3>';
+}

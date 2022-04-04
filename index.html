@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="res/css/styles.css">
     <link rel="stylesheet" href="res/bootstrap/css/bootstrap.css">
+    <script src="res/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,10 +18,10 @@
                 </div>
                 <div class="nav_rigth">
                     <div class="nav_link">
-                        <a class="nav_a" href="">Home</a>
-                        <a class="nav_a" href="">About</a>
-                        <a class="nav_a" href="">Skills</a>
-                        <a class="nav_a" href="">Service</a>
+                        <a class="nav_a" href="#">Home</a>
+                        <a class="nav_a" href="#about_me">About</a>
+                        <a class="nav_a" href="#my_skills">Skills</a>
+                        <a class="nav_a" href="#my_services">Service</a>
                         <a class="nav_a" href="">Portfolio</a>
                         <a class="nav_a" href="">Contactme</a>
                     </div>
@@ -421,6 +422,64 @@
                   </div>
             </div>
         </div>
+        <div class="services" id="my_services">
+            <div class="container_title">
+                <div class="services_title">
+                    <h2>Services</h2>
+                    <span>What i offer</span>
+                </div>
+            </div>
+            <div class="container_content">
+                <div class="serviceCard">
+                    <div class="card_service designer">
+                        <p class="icon_services"><i class="uil uil-web-grid"></i></p>
+                        <p class="services_name"> Ui/Ux <br>Designer</p>
+                        <p class="service_plus service_ui" data-bs-toggle="modal" data-bs-target="#detail_card">
+                           View More &nbsp; <i class="uil uil-arrow-right"></i> 
+                        </p>
+                    </div>
+                    <div class="card_service developer">
+                        <p class="icon_services"><i class="uil uil-arrow"></i></p>
+                        <p class="services_name"> Frontend <br>Developer</p>
+                        <p class="service_plus service_front" data-bs-toggle="modal" data-bs-target="#detail_card">
+                            View More &nbsp; <i class="uil uil-arrow-right"></i>
+                        </p>
+                    </div>
+                    <div class="card_service branding">
+                        <p class="icon_services"><i class="uil uil-pen"></i></p>
+                        <p class="services_name"> Branding <br>Designer</p>
+                        <p class="service_plus service_brand" data-bs-toggle="modal" data-bs-target="#detail_card">
+                            View More &nbsp; <i class="uil uil-arrow-right"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="detail_card" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal_title">
+                            <div class="frontend_modal">
+                                <div id="serviceModal">
+                                   <!--le contenu se trouve dans js-->
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                    <p> <i class="uil uil-check-circle"></i> I develop the user interface</p>
+                    <p> <i class="uil uil-check-circle"></i> Web page developpement</p>
+                    <p> <i class="uil uil-check-circle"></i> I create ux element interactions</p>
+                    <p> <i class="uil uil-check-circle"></i> I position your company brand</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+       <div class="porfolio" style="margin-top: 5rem;">
+       </div>
     </div>
     <script src="res/js/index.js"></script>
 </body>
