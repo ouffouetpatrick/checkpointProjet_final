@@ -22,7 +22,7 @@
                         <a class="nav_a" href="#about_me">About</a>
                         <a class="nav_a" href="#my_skills">Skills</a>
                         <a class="nav_a" href="#my_services">Service</a>
-                        <a class="nav_a" href="">Portfolio</a>
+                        <a class="nav_a" href="#my_portfolio">Portfolio</a>
                         <a class="nav_a" href="">Contactme</a>
                     </div>
                     <span class="lune"><i class="uil uil-moon"></i></span>
@@ -57,7 +57,7 @@
             <div class="about_head">
                 <div class="about_title">
                     <h2> About me </h2>
-                    <p>My introduction</p>
+                    <span>My introduction</span>
                 </div>
             </div>
             <div class="container_about">
@@ -96,8 +96,8 @@
         <div class="skills" id="my_skills">
             <div class="skills_title">
                 <div class="title">
-                    <h2> <p>Skills</p> </h2>
-                    <p>My technical level</p>
+                    <h2> Skills </h2>
+                    <span>My technical level</span>
                 </div>
             </div>
             <div class="skills_content">
@@ -275,7 +275,7 @@
             <div class="header_qualif">
                 <div class="qualif_title">
                     <h2>Qualification</h2>
-                    <p>My personal journey</p>
+                    <span>My personal journey</span>
                 </div>
             </div>
             <div class="qualif_subtitle">
@@ -478,8 +478,100 @@
                 </div>
             </div>
         </div>
-       <div class="porfolio" style="margin-top: 5rem;">
-       </div>
+        <div class="portfolio" id="my_portfolio">
+            <div class="portfolio_header">
+                <div class="portfolio_title">
+                    <h2>Portfolio</h2>
+                    <span>Most recent work</span>
+                </div>
+            </div>
+            <div class="portfolio_caroussel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" style="background-color: #8957e0; width: 10px; height: 10px; border-radius: 90%;" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="button_slide" style="background-color: #8957e0; width: 10px; height: 10px; border-radius: 90%;" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="button_slide" style="background-color: #8957e0; width: 10px; height: 10px; border-radius: 90%;" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel_content">
+                            <div class="img_content">
+                                <div class="img_carousel">
+                                    <img src="res/images/portfolio1.jpg" alt="">
+                                </div>
+                                <div class="img_description">
+                                    <div class="carousel_right">
+                                        <h4> Moderne Website </h4>
+                                        <p>
+                                            Website adaptable to all devices, with <br>
+                                            ui components and animated <br>
+                                            interactions.
+                                        </p>
+                                    </div>
+                                    <div class="carousel_right__button">
+                                        <button type="submit" class="btn btn-primary">Demo <i class="uil uil-arrow-right"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <div class="carousel_content">
+                            <div class="img_content">
+                                <div class="img_carousel">
+                                    <img src="res/images/portfolio2.jpg" alt="">
+                                </div>
+                                <div class="img_description">
+                                    <div class="carousel_right">
+                                        <h4> Brand Design </h4>
+                                        <p>
+                                            Website adaptable to all devices, with <br>
+                                            ui components and animated <br>
+                                            interactions.
+                                        </p>
+                                    </div>
+                                    <div class="carousel_right__button">
+                                        <button type="submit" class="btn btn-primary">Demo <i class="uil uil-arrow-right"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel_content">
+                            <div class="img_content">
+                                <div class="img_carousel">
+                                    <img src="res/images/portfolio3.jpg" alt="">
+                                </div>
+                                <div class="img_description">
+                                    <div class="carousel_right">
+                                        <h4> Online Store </h4>
+                                        <p>
+                                            Website adaptable to all devices, with <br>
+                                            ui components and animated <br>
+                                            interactions.
+                                        </p>
+                                    </div>
+                                    <div class="carousel_right__button">
+                                        <button type="submit" class="btn btn-primary">Demo <i class="uil uil-arrow-right"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span><i class="uil uil-angle-left-b"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span><i class="uil uil-angle-right-b"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 5rem;"></div>
     </div>
     <script src="res/js/index.js"></script>
 </body>
