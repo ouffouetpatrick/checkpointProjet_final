@@ -759,3 +759,40 @@ nav{
 #carouselExampleIndicators{
     padding-bottom: 80px;
 }
+
+
+/*
+=========== zone project =========
+**/
+.zone_project{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project{
+    /* border: 2px solid; */
+    width: 800px;
+    background-color: var(--first-color-second);
+    color: #FFF;
+    padding: 3.5rem 3rem 3.5rem 3rem;
+    border-radius: 15px;
+}
+
+.project_title{
+    font-size: var(--h2-font-size);
+    color: #FFF;
+    margin-bottom: 15px;
+}
+.project button{
+    color: var(--gray-light);
+    background-color: white;
+    padding: 17px 15px 17px 15px;
+    font-weight: var(--font-semi-bold);
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.project_description{
+    margin-bottom: 2rem;
+}
